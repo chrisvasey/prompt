@@ -15,6 +15,9 @@
   <!-- Scripts -->
   <script src="js/jquery.min.js"></script>
   <script src="js/less.min.js"></script>
+
+  <!-- Sweet Alert -->
+  <script src="lib/sweet-alert.min.js"></script> <link rel="stylesheet" type="text/css" href="lib/sweet-alert.css">
   
   <!-- Font import -->
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
@@ -28,6 +31,14 @@
   <!--   <meta property="og:image" content="images/icon.png" /> -->
   <meta property="og:title" content="Project Name" />
   <meta property="og:description" content="Project Discription"/> 
+
+  <script>
+   $(document).ready(function(){
+    $(".item").click(function() {
+      swal("Good job!", "You clicked your face Grace!", "success");
+    });
+   });
+  </script>
 </head>
 <body>
 
@@ -37,13 +48,40 @@
   </div>
 </div>
 
+<!-- <div class="container menuContent">
+  <div class="col-md-4 col-xs-6 item" id="one"></div>
+  <div class="col-md-4 col-xs-6 item" id="two"></div>
+  <div class="col-md-4 col-xs-6 item" id="three"></div>
+  <div class="col-md-4 col-xs-6 item" id="four"></div>
+  <div class="col-md-4 col-xs-6 item" id="five"></div>
+  <div class="col-md-4 col-xs-6 item" id="six"></div>
+</div>
+ -->
 <div class="container menuContent">
-  <div class="col-md-4 col-xs-6 item" id="1"></div>
-  <div class="col-md-4 col-xs-6 item" id="2"></div>
-  <div class="col-md-4 col-xs-6 item" id="3"></div>
-  <div class="col-md-4 col-xs-6 item" id="4"></div>
-  <div class="col-md-4 col-xs-6 item" id="5"></div>
-  <div class="col-md-4 col-xs-6 item" id="6"></div>
+  <div class="col-md-4 col-xs-6">
+    <div class="item" id="one"></div>
+    <h3>Grace</h3>
+  </div>
+  <div class="col-md-4 col-xs-6">
+    <div class="item" id="two"></div>
+    <h3>Grace</h3>
+  </div>
+  <div class="col-md-4 col-xs-6">
+    <div class="item" id="three"></div>
+    <h3>Grace</h3>
+  </div>
+  <div class="col-md-4 col-xs-6">
+    <div class="item" id="four"></div>
+    <h3>Grace</h3>
+  </div>
+  <div class="col-md-4 col-xs-6">
+    <div class="item" id="five"></div>
+    <h3>Grace</h3>
+  </div>
+  <div class="col-md-4 col-xs-6">
+    <div class="item" id="six"></div>
+    <h3>Grace</h3>
+  </div>
 </div>
 
 
