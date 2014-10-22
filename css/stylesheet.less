@@ -5,7 +5,7 @@ html, body {
 	width: 100%;
 	font-size: 18px;
 	font-family: 'Lato', sans-serif !important;
-	background: #e74c3c;
+	background: rgba(250, 128, 114, 1);
 }
 
 .header {
@@ -29,8 +29,26 @@ html, body {
 		background-size: cover;
 		border: 2px solid rgb(51, 51, 51);
 		margin-top: 25px;
+		z-index: 3;
+		.ba {
+			height: 40px;
+			width: 40px;
+			z-index: 4;
+			background: rgba(255, 255, 255, 1);
+			float: right;
+			border: 2px solid rgb(51, 51, 51);
+			border-radius: 200px;
+			margin-top: 110px;
+			p {
+				margin-top: 6px;
+				margin-left: -1px;
+				text-align: center;
+			}
+
+		}
 	}
 	h3 {
+		margin-top: 2px;
 		text-align: center;
 	}
 	#one {
